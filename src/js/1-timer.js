@@ -49,7 +49,7 @@ function startTimer() {
 
   intervalId = setInterval(() => {
     const now = Date.now();
-    const diff = userSelectedDate - now;
+    const diff = userDate - now;
 
     if (diff <= 0) {
       updateUI(0, 0, 0, 0);
